@@ -8,7 +8,7 @@ function Form() {
     imageUrl: '',
   })
 
-  const handleFormValuses = (e) => {
+  const handleFormValues = (e) => {
     console.log(e.target.name)
     console.log(e.target.value)
 
