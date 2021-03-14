@@ -1,11 +1,34 @@
 import React from 'react'
-import WebtoonMaker from './webtoon-maker'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import styled from 'styled-components'
+
+import ResetCSS from './components/reset-css'
+import { ROUTES } from './constants'
+
+import HomePage from './pages/home'
+import WebtoonPage from './pages/webtoon'
+
+const Container = styled.div`
+  max-width:720px;
+  margin:0 auto;
+  height:100vh
+
+`
 
 
-// class App extends React.Component{} // 클래스 컴포넌트 state 상태 0, 라이프 사이클  함수 지원 O
-function App(){ //컴포넌트는 항상 대문자! // state X , 라이프사이클 X (리액트 hook 나와서)--> state 0, 라이프 0,  좀 단순하고 흐름이 눈에 보이는!  함수형 컴포넌트,프로그래밍~
-
-    return <WebtoonMaker />
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path={ROUTES.HOME}>
+          <HomePage />
+        </Route>
+        <Route path={ROUTES.WEBTOON}>
+          <WebtoonPage />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
