@@ -8,15 +8,16 @@ const Container = styled.div`
 function Webtoon({ webtoon }) {
   const { title, author, description, imageUrl } = webtoon
   return (
-    <container>
+    <Container>
+      <div>{title}</div>
       <div>
         <img src={imageUrl} alt={title} />
       </div>
       <div>
-        {title} / {author}
+        <span>{author}</span>
       </div>
-      <div>설명</div>
-    </container>
+      <div>{description}</div>
+    </Container>
   )
 }
 

@@ -21,9 +21,14 @@ function WebtoonMaker() {
         'https://image-comic.pstatic.net/webtoon/662774/thumbnail/thumbnail_IMAG19_8d97e971-103f-4c59-8cfc-5394dcda9256.jpg',
     },
   ])
+
+  const handleAddwebtoon = (webtoon) => { // 이벤트 할땐 handle 씀 스테이트에 변화된 함수 
+    console.log('부모',webtoon)
+    setWebtoons([...webtoons,webtoon])
+  }
   return (
     <div>
-      <Form />
+      <Form onAddWebtoon={handleAddwebtoon}/>
       {webtoons.map((webtoon, index) => {
         return <Webtoon key={index} webtoon={webtoon} />
       })}
