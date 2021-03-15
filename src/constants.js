@@ -4,6 +4,6 @@ export const ROUTES ={
         HOME:'/webtoon/home',
         WEEKDAY:'/webtoon/weekday',
         FINISH:'/webtoon/finish',
-        GENER:'/webtoon/genre',
+        GENRE:'/webtoon/genre',
     },
 }

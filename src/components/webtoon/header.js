@@ -29,7 +29,7 @@ function Header({tab}){
             <Menu to={ROUTES.WEBTOON.HOME} on={tab === 'home'}>홈</Menu>
             <Menu to={ROUTES.WEBTOON.WEEKDAY} on={tab === 'weekday'}>요일별</Menu>
             <Menu to={ROUTES.WEBTOON.FINISH} on={tab === 'finish'}>완결</Menu>
-            <Menu to={ROUTES.WEBTOON.GENER} on={tab === 'genre'}>베스트도전</Menu>
+            <Menu to={ROUTES.WEBTOON.GENRE} on={tab === 'genre'}>베스트도전</Menu>
         </Container>
     )
 }

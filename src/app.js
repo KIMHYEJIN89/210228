@@ -23,7 +23,7 @@ function App() {
         <Route exact path={ROUTES.HOME}>
           <HomePage />
         </Route>
-        <Route path={ROUTES.WEBTOON}>
+        <Route path={ROUTES.WEBTOON.GENRE}>
           <WebtoonPage />
         </Route>
       </Switch>
