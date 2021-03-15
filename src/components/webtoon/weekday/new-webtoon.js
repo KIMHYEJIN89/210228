@@ -30,9 +30,9 @@ function NewWebtoon() {
   return (
     <Container>
       <Title>이달의 신작</Title>
-      {webtoons.map({} => (
+      {webtoons.map(() => {
         return <Webtoon webtoon={webtoon} key={webtoon.id} />
-      ))}
+      })}
     </Container>
   )
 }
